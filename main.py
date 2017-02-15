@@ -44,7 +44,7 @@ class NeuralNetwork():
             error = training_set_outputs - output
 
             # print mean squared error
-            print "error: %f" % math.sqrt((error**2).sum(axis=0)[0]/ len(training_set_outputs))
+            print "error: %f" % math.sqrt( (error**2).sum(axis=0)[0] / len(training_set_outputs) )
 
             # Multiply the error by the input and again by the gradient of the Sigmoid curve.
             # This means less confident weights are adjusted more.
